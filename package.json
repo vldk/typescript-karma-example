@@ -2,8 +2,8 @@
   "name": "typescript-karma-example",
   "version": "1.0.0",
   "description": "A starter project for TypeScript, Karma and SystemJS",
-    "private": true,
-    "directories": {
+  "private": true,
+  "directories": {
     "test": "test"
   },
   "scripts": {
@@ -26,5 +26,11 @@
   "bugs": {
     "url": "https://github.com/vldk/typescript-karma-example/issues"
   },
-  "homepage": "https://github.com/vldk/typescript-karma-example#readme"
+  "homepage": "https://github.com/vldk/typescript-karma-example#readme",
+  "devDependencies": {
+    "bourbon": "^4.2.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0"
+  }
 }

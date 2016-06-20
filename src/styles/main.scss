@@ -1,0 +1,22 @@
+@import "bourbon";
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  font: #{24px}/#{26px} Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  text-align: center;
+  padding: 5px;
+  @include linear-gradient(to bottom, #28c2ff, #feffa6);
+}
+
+#message {
+  border: 1px dashed tomato;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
