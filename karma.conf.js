@@ -70,13 +70,20 @@ module.exports = function (config) {
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['progress','coverage'],
+        reporters: ['progress','coverage','karma-remap-istanbul'],
         coverageReporter: {
             dir: 'coverage',
             reporters: [
-                { type: 'json', subdir: '.', file: 'coverage-final.json'},
-                { type: 'html', subdir: 'report-html' }
+                { type: 'json', subdir: '.', file: 'report.json'}
             ]
+        },
+        remapIstanbulReporter: {
+            src: 'coverage/report.json',
+            reports: {
+                html: 'coverage/report-html'
+            },
+            timeoutNotCreated: 1000, // default value
+            timeoutNoMoreFiles: 1000 // default value
         },
 
 
