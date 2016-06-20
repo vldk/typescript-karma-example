@@ -1,0 +1,30 @@
+{
+  "name": "typescript-karma-example",
+  "version": "1.0.0",
+  "description": "A starter project for TypeScript, Karma and SystemJS",
+    "private": true,
+    "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vldk/typescript-karma-example.git"
+  },
+  "keywords": [
+    "typescript",
+    "karma",
+    "systemjs",
+    "coverage",
+    "example",
+    "starter"
+  ],
+  "author": "vldk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vldk/typescript-karma-example/issues"
+  },
+  "homepage": "https://github.com/vldk/typescript-karma-example#readme"
+}
