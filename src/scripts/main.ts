@@ -1,8 +1,4 @@
 
-import {Person} from './Person';
+import {sayHello} from "./greeter";
 
-let person = new Person('John', 'Snow');
-
-let el = document.getElementById('message');
-
-el.innerHTML = `Hello, ${person.firstName} ${person.lastName}!`;
+sayHello();

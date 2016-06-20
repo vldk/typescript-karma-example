@@ -1,6 +1,5 @@
 /// <reference path="./../../typings/index.d.ts" />
 import {Person} from "../../src/scripts/Person";
-import {expect} from 'chai';
 
 describe('Person', ()=>{
     let person;

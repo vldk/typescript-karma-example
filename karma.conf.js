@@ -80,6 +80,7 @@ module.exports = function (config) {
         remapIstanbulReporter: {
             src: 'coverage/report.json',
             reports: {
+                // lcov:'report-lcov',
                 html: 'coverage/report-html'
             },
             timeoutNotCreated: 1000, // default value
