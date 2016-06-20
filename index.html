@@ -5,6 +5,18 @@
     <title>Typescript project example</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, user-scalable=no">
     <link rel="stylesheet" href="dist/styles/main.css">
+    <script id="system_loader" src="node_modules/systemjs/dist/system.js"></script>
+    <script id="system_config" src="system.conf.js"></script>
+    <script id="dev-setup">
+        System.import('dist/scripts/main')
+                .then(function() {
+                    console.log('running');
+                })
+                .catch(function(err) {
+                    console.log(err);
+                    console.log(err.originalErr);
+                });
+    </script>
 </head>
 <body>
 <section>
