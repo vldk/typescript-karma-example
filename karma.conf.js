@@ -15,8 +15,10 @@ module.exports = function (config) {
 
         // list of files / patterns to load in the browser
         files: [
-            'test/**/*.ts',
-            'test/**/*.js'
+            // 'test/*.spec.ts',
+            'test/*',
+            'test/**/*'
+
         ],
 
 
@@ -45,6 +47,8 @@ module.exports = function (config) {
             serveFiles: [
                 'src/**/*.ts',
                 'test/**/*.ts'
+
+                //, 'node_modules/{redux,jquery/dist}/**/*.js'
             ],
 
             // SystemJS configuration specifically for tests, added after your config file.
@@ -70,18 +74,18 @@ module.exports = function (config) {
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['progress','coverage','karma-remap-istanbul'],
+        reporters: ['progress','coverage'/*,'karma-remap-istanbul'*/],
         coverageReporter: {
-            dir: 'coverage',
+            dir: 'test-results/coverage',
             reporters: [
                 { type: 'json', subdir: '.', file: 'report.json'}
             ]
         },
         remapIstanbulReporter: {
-            src: 'coverage/report.json',
+            src: 'test-results/coverage/report.json',
             reports: {
                 // lcov:'report-lcov',
-                html: 'coverage/report-html'
+                html: 'test-results/coverage/report-html'
             },
             timeoutNotCreated: 1000, // default value
             timeoutNoMoreFiles: 1000 // default value
