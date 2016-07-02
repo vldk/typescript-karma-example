@@ -16,8 +16,8 @@ export class Person implements IPerson {
         this.age = age;
     }
 
-    setAge(age:number){
-        if(age < 0) throw new Error('Invalid age value');
+    setAge(age:number) {
+        if (age < 0) throw new Error("Invalid age value");
         this.age = age;
     }
 }
